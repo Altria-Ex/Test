@@ -1,0 +1,5 @@
+before_install:
+- openssl aes-256-cbc -K $encrypted_f6d8890a62d9_key -iv $encrypted_f6d8890a62d9_iv
+  -in data.txt.enc -out data.txt -d
+script:
+- cat data.txt
